@@ -23,7 +23,7 @@
       color: #111;
   }
   .container {
-      padding: 30px 80px;
+      /*padding: 30px 80px;*/
   }
   .person {
       border: 10px solid transparent;
@@ -36,10 +36,11 @@
       border-color: #f1f1f1;
   }
   .carousel-inner img {
-      /*-webkit-filter: grayscale(90%);*/
+      /*?-webkit-filter: grayscale(90%);*/
       /*filter: grayscale(90%);  make all photos black and white  */
       width: 100%; /* Set width to 100% */
-      margin: auto;
+      margin:all;
+      filter: grayscale(100%);
   }
   .carousel-caption h3 {
       color: #fff !important;
@@ -50,8 +51,10 @@
     }
   }
   .bg-1 {
-      background:rgba(0,0,0,.2);
+      
+      /*background:rgba(0,0,0,.2);*/
       color: grey;
+      
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -99,15 +102,15 @@
   #googleMap {
       width: 100%;
       height: 400px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
+      /*-webkit-filter: grayscale(100%);*/
+      /*filter: grayscale(100%);*/
   }  
   .navbar {
       font-family: Segoe ui, sans-serif;
       margin-bottom: 0;
       background-color: white;
       border: 0;
-      font-size: 11px !important;
+      font-size: 12px !important;
       letter-spacing: 4px;
       opacity: 0.8;
   }
@@ -135,7 +138,7 @@
       background-color: green;
   }
   footer {
-      background-color: wine;
+      background-color: black;
       color: #f5f5f5;
       padding: 32px;
   }
@@ -155,9 +158,9 @@
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<!-- <img src="icon.png" width="60px" height="50px"> -->
+
 <nav class="navbar navbar-default navbar-fixed-top">
-  
+  <!-- <img src="icon.png" width="60px" height=""> -->
   <div class="container-fluid">
 
     <div class="navbar-header">
@@ -167,7 +170,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-        <a class="navbar-brand" href="#myPage"><strong>FuturSense</strong></a>
+  
+      <a class="navbar-brand" href="#myPage"><strong>FuturSense</strong></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -236,45 +240,87 @@
 </div>
 
 <!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
-  <h1>At FuturSense</h1>
+<div id="band" class="container text-left">
+  <h2>At FuturSense</h2>
   <p></p>
   <p>We believe in the potential of every student. Their performance data holds the power to help educators
   address learning challenges to day for students to succeed tomorrow. Our insights open a world of endless possibilities and deployments on education end-to-end.
   We believe in progressive learning because we love quality education.</p>
   <br>
+  <h2>Our Focus</h2>
+    <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Government</a></li>
+    <li><a data-toggle="tab" href="#menu1">School Partnership Programme</a></li>
+    <li><a data-toggle="tab" href="#menu2">Private Partnership Programme</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+  <br>
+
+  <h2>Management</h2>
   <div class="row">
     <div class="col-sm-4">
-      <p class="text-center"><strong>Akan John Odu</strong></p><br>
+      
       <a href="#demo" data-toggle="collapse">
         <img src="akanodu.png" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
-      <div id="demo" class="collapse">
+      
+      <div id="demo" class="collapse text-center">
+        <p><strong>Akan John Odu</strong></p>
         <p>Reporting & Strategy Management</p>
         <!-- <p>Loves swimming with very beautiful girls</p> -->
         <p>Co-Founder</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Damilare Olatunji Olaoye</strong></p><br>
+      
       <a href="#demo2" data-toggle="collapse">
         <img src="bb.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
-      <div id="demo2" class="collapse">
+      <div id="demo2" class="collapse text-center">
+        <p>               <strong>Damilare Olatunji Olaoye</strong></p>
         <p>Project & Operations Management</p>
         <!-- <p>He loves the piano and cute girls too!!</p> -->
         <p>Co-Founder</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>#TeamFuture</strong></p><br>
+      
       <a href="#demo3" data-toggle="collapse">
         <img src="team.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
-      <div id="demo3" class="collapse">
+      <div id="demo3" class="collapse text-center">
+        <p><strong>#TeamFuture</strong></p>                      
         <p>FuturSens Team</p>
         <p>Builidng a better world</p>
-        <p>Management</p>
+        
       </div>
     </div>
   </div>
@@ -385,33 +431,7 @@
       </div>
     </div>
   </div>
-  <br>
-  <h3 class="text-center">Service Offerings</h3>  
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Government</a></li>
-    <li><a data-toggle="tab" href="#menu1">School Partnership Programme</a></li>
-    
-  </ul>
-
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h2>Government</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h2>School Partnership Programme</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+ 
     
   </div>
 </div>
