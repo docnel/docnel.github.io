@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>FuturSense Home</title>
+  <title>FuturSense | Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body {
-      font: 400 15px/1.8 Lato, sans-serif;
+      font: 400 15px/1.8 segoe ui, sans-serif;
       color: #777;
   }
   h3, h4 {
@@ -49,8 +49,8 @@
     }
   }
   .bg-1 {
-      background: #2d2d30;
-      color: #bdbdbd;
+      background:rgba(0,0,0,.2);
+      color: grey;
   }
   .bg-1 h3 {color: #fff;}
   .bg-1 p {font-style: italic;}
@@ -255,7 +255,7 @@
       </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Damilare Olaoye</strong></p><br>
+      <p class="text-center"><strong>Damilare Olatunji Olaoye</strong></p><br>
       <a href="#demo2" data-toggle="collapse">
         <img src="bb.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
@@ -419,14 +419,15 @@
 <div id="googleMap"></div>
 <script>
 function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var myCenter = new google.maps.LatLng(6.492774, 3.357099);
 var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position:myCenter});
 marker.setMap(map);
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMTWOoE_4OgKPyjEko36HJcZXPCNpJ3-Q&callback=myMap"></script>
+
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
